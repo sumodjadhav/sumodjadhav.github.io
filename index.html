@@ -14,71 +14,71 @@
             $("#showAns1").click(function(){
                 $("#ans1").css("display", "block");
                 $("#showAns1").css("display", "none");
-                $("#hideAns1").css("display", "inline");
+                $("#hideAns1").css("display", "block");
             });
             $("#hideAns1").click(function(){
                 $("#ans1").css("display", "none");
-                $("#showAns1").css("display", "inline");
+                $("#showAns1").css("display", "block");
                 $("#hideAns1").css("display", "none");
             });
             $("#showAns2").click(function(){
                 $("#ans2").css("display", "block");
                 $("#showAns2").css("display", "none");
-                $("#hideAns2").css("display", "inline");
+                $("#hideAns2").css("display", "block");
             });
             $("#hideAns2").click(function(){
                 $("#ans2").css("display", "none");
-                $("#showAns2").css("display", "inline");
+                $("#showAns2").css("display", "block");
                 $("#hideAns2").css("display", "none");
             });
             $("#showAns3").click(function(){
                 $("#ans3").css("display", "block");
                 $("#showAns3").css("display", "none");
-                $("#hideAns3").css("display", "inline");
+                $("#hideAns3").css("display", "block");
             });
             $("#hideAns3").click(function(){
                 $("#ans3").css("display", "none");
-                $("#showAns3").css("display", "inline");
+                $("#showAns3").css("display", "block");
                 $("#hideAns3").css("display", "none");
             });
             $("#showAns4").click(function(){
                 $("#ans4").css("display", "block");
                 $("#showAns4").css("display", "none");
-                $("#hideAns4").css("display", "inline");
+                $("#hideAns4").css("display", "block");
             });
             $("#hideAns4").click(function(){
                 $("#ans4").css("display", "none");
-                $("#showAns4").css("display", "inline");
+                $("#showAns4").css("display", "block");
                 $("#hideAns4").css("display", "none");
             });
             $("#showAns5").click(function(){
                 $("#ans5").css("display", "block");
                 $("#showAns5").css("display", "none");
-                $("#hideAns5").css("display", "inline");
+                $("#hideAns5").css("display", "block");
             });
             $("#hideAns5").click(function(){
                 $("#ans5").css("display", "none");
-                $("#showAns5").css("display", "inline");
+                $("#showAns5").css("display", "block");
                 $("#hideAns5").css("display", "none");
             });
             $("#showAns6").click(function(){
                 $("#ans6").css("display", "block");
                 $("#showAns6").css("display", "none");
-                $("#hideAns6").css("display", "inline");
+                $("#hideAns6").css("display", "block");
             });
             $("#hideAns6").click(function(){
                 $("#ans6").css("display", "none");
-                $("#showAns6").css("display", "inline");
+                $("#showAns6").css("display", "block");
                 $("#hideAns6").css("display", "none");
             });
             $("#showAns7").click(function(){
                 $("#ans7").css("display", "block");
                 $("#showAns7").css("display", "none");
-                $("#hideAns7").css("display", "inline");
+                $("#hideAns7").css("display", "block");
             });
             $("#hideAns7").click(function(){
                 $("#ans7").css("display", "none");
-                $("#showAns7").css("display", "inline");
+                $("#showAns7").css("display", "block");
                 $("#hideAns7").css("display", "none");
             });
         });
@@ -86,7 +86,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-
 
 body{
     margin: 20px;
@@ -339,7 +338,7 @@ textarea {
     line-height: 100%;
     /* or 14px */
 
-
+margin-bottom: 15px;
     color: #0D0C0C;
 }
 
@@ -435,7 +434,7 @@ textarea {
     /* Gray 1 */
 
     color: #333333;
-    margin: 30px;
+    margin: 30px 30px 30px;
 }
 .firstBlock {
     margin-left: 5px;
@@ -458,18 +457,33 @@ textarea {
     background-color: rgba(196, 196, 196, 0.21);
     color: #000000;
     padding: 10px;
+    margin: 1px;
 }
 
 
 .faqImage{
     display: none;
 }
-
+.faqImage2{
+    display: none;
+}
 .partnerBtn{
     display: none;
 }
 
+.influBlock{
+    line-height: 1;
+    margin-left: 30px;
+
+}
+
+.qnaBlock{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
 @media only screen and (min-width: 480px) and (max-width: 768px)  and (orientation: portrait){
+
+
     .secondBlock > .grid-container {
         display: grid;
         grid-template-columns: 2fr 2fr;
@@ -514,16 +528,18 @@ textarea {
         /* or 30px */
 
         text-align: left;
+        margin-left: 20px;
+        margin-bottom: 40px;
 
     }
     .sixthBlock .subheadText{
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 100%;
         /* or 16px */
-
+        margin-left: 20px;
         text-align: left;
 
         /* Gray 1 */
@@ -537,6 +553,43 @@ textarea {
         background-color: rgba(156, 201, 226, 0.15);
         padding: 10px;
         margin: 5px;
+    }
+    .sixthBlock .influncerName{
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 100%;
+        /* or 24px */
+
+
+        /* Gray 1 */
+
+        color: #333333;
+    }
+    .sixthBlock .infuncer{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        /* or 24px */
+
+
+        /* Gray 3 */
+
+        color: #828282;
+    }
+    .fifthBlock .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 5px;
+    }
+    .faqImage2{
+        display: block;
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 680px)  and (orientation: landscape) {
@@ -725,6 +778,11 @@ textarea {
         padding: 10px;
         margin: 5px;
     }
+    .influBlock{
+        line-height: 1;
+        margin-left: 5px;
+
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){
     .secondBlock > .grid-container {
@@ -769,7 +827,7 @@ textarea {
         font-size: 40px;
         line-height: 100%;
         /* or 30px */
-
+margin-left: 25px;
         text-align: left;
 
     }
@@ -780,7 +838,7 @@ textarea {
         font-size: 22px;
         line-height: 100%;
         /* or 16px */
-
+margin-left: 25px;
         text-align: left;
 
         /* Gray 1 */
@@ -803,6 +861,17 @@ textarea {
         padding: 10px;
         margin: 5px;
     }
+    .fifthBlock .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 5px;
+    }
+    .faqImage2{
+        display: block;
+    }
+
 }
 @media only screen and (min-width: 921px) and (max-width: 1024px) and (orientation: landscape){
     .secondBlock > .grid-container {
@@ -847,7 +916,7 @@ textarea {
         font-size: 40px;
         line-height: 100%;
         /* or 30px */
-
+margin-left: 20px;
         text-align: left;
 
     }
@@ -858,7 +927,7 @@ textarea {
         font-size: 22px;
         line-height: 100%;
         /* or 16px */
-
+        margin-left:20px;
         text-align: left;
 
         /* Gray 1 */
@@ -881,8 +950,23 @@ textarea {
         padding: 10px;
         margin: 5px;
     }
+    .fifthBlock .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 5px;
+    }
+    .faqImage2{
+        display: block;
+    }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1200px) {
+
+  body{
+      width: 1200px;
+      margin-left:4%;
+  }
     .secondBlock > .grid-container {
         display: grid;
         grid-template-columns: auto auto;
@@ -939,8 +1023,8 @@ textarea {
     .thirdBlock > .grid-container {
         display: grid;
         grid-template-columns: auto auto;
-        grid-gap: 120px;
-        margin-left: 30px;
+        grid-gap: 180px;
+        /*margin-left: 30px;*/
 
     }
     .thirdBlock > .grid-container > .grid-child {
@@ -1009,7 +1093,7 @@ textarea {
         grid-template-columns: auto auto auto;
         grid-gap: 10px;
         background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px 10px 40px 100px;
+        padding: 10px 10px 40px 60px;
         margin: 5px;
 
     }
@@ -1093,24 +1177,18 @@ textarea {
         font-weight: bold;
         font-size: 24px;
         line-height: 100%;
-        /* or 24px */
-
-
-        /* Gray 1 */
-
-        color: #333333;
     }
     .sixthBlock .infuncer{
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 100%;
         /* or 24px */
 
 
         /* Gray 3 */
-
+        margin-top: 0px;
         color: #828282;
     }
     .superHeadText{
@@ -1125,6 +1203,7 @@ textarea {
         /* Gray 1 */
 
         color: #333333;
+        margin-bottom: 50px;
 
     }
     .fifthBlock .grid-container{
@@ -1150,7 +1229,7 @@ textarea {
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 100%;
         /* or 10px */
 
@@ -1159,6 +1238,10 @@ textarea {
     }
     .faqImage{
         display: block;
+
+    }
+    .faqImage > img{
+        margin-top: 10px;
     }
     .partnerBtn{
         display: block;
@@ -1190,6 +1273,29 @@ textarea {
     }
     .sixthBlock{
         margin-bottom: 50px;
+    }
+    .influBlock{
+        line-height: 1;
+margin-left: 10px;
+    }
+
+}
+@media only screen and (min-width: 1300px){
+    body{
+
+        margin-left:6%;
+    }
+}
+@media only screen and (min-width: 1400px){
+    body{
+
+        margin-left: 7%;
+    }
+}
+@media only screen and (min-width: 1500px){
+    body{
+
+        margin-left: 10%;
     }
 }
 </style>
@@ -1504,52 +1610,99 @@ textarea {
     <div class="grid-container">
         <div class="grid-child">
             <div class="grid-child">
-                <div style="border-bottom: 1px solid gray">
-                    <div class="questionText m-2">
+            <table>
+                <tbody>
+                <tr>
+                    <td style="vertical-align: top">
                         <span id="showAns1" style="display: none" class="text-highlighting fa fa-plus-square "></span>
-                        <span id="hideAns1" style="display:inline " class="text-highlighting fa fa-minus-square "></span>&nbsp;What is AP?</div>
-                    <div id="ans1" style="display: block" class="answerText ml-3">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate  who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
-                </div>
-                <div style="border-bottom: 1px solid gray">
-                    <div   class="questionText m-2">
-                        <span id="showAns2" style="display: inline" class="text-highlighting fa fa-plus-square"></span>
-                        <span id="hideAns2" style="display:none " class="text-highlighting fa fa-minus-square"></span>&nbsp;What does AP do?</div>
-                    <div id="ans2" class="answerText ml-3" style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate  who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
-                </div>
-                <div style="border-bottom: 1px solid gray">
-                    <div class="questionText m-2">
-                        <span id="showAns3" style="display: inline" class="text-highlighting fa fa-plus-square "></span>
-                        <span id="hideAns3" style="display:none" class="text-highlighting fa fa-minus-square"></span>&nbsp;Who can become AP?</div>
-                    <div id="ans3" class="answerText ml-3" style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate  who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
-                </div>
-                <div style="border-bottom: 1px solid gray">
-                    <div  class="questionText m-2">
-                        <span id="showAns4" style="display: inline" class="text-highlighting fa fa-plus-square"></span>
-                        <span id="hideAns4"  style="display: none" class="text-highlighting fa fa-minus-square"></span>&nbsp;Do i need to deposit security amount to open AP account?</div>
-                    <div id="ans4" class="answerText ml-3"  style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
-                </div>
-                <div style="border-bottom: 1px solid gray">
-                    <div  class="questionText m-2">
-                        <span id="showAns5" style="display: inline" class="text-highlighting fa fa-plus-square "></span>
-                        <span id="hideAns5"  style="display: none" class="text-highlighting fa fa-minus-square "></span>&nbsp;What is the eligibilty criteria for becoming AP?</div>
-                    <div id="ans5" class="answerText ml-3"  style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
-                </div>
-                <div style="border-bottom: 1px solid gray">
-                    <div class="questionText m-2">
-                        <span id="showAns6" style="display: inline" class="text-highlighting fa fa-plus-square "></span>
-                        <span id="hideAns6"  style="display: none" class="text-highlighting fa fa-minus-square "></span>&nbsp;How much time it takes to become a AP with Astha?</div>
-                    <div  id="ans6"  class="answerText ml-3"  style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate  who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
-                </div>
-                <div style="border-bottom: 1px solid gray">
-                    <div class="questionText m-2">
-                        <span id="showAns7" style="display: inline" class="text-highlighting fa fa-plus-square "></span>
-                        <span id="hideAns7"  style="display: none" class="text-highlighting fa fa-minus-square "></span>&nbsp;What are the documents required for registration?</div>
-                    <div  id="ans7"  class="answerText ml-3"  style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate  who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
-                </div>
+                        <span id="hideAns1" style="display:block" class="text-highlighting fa fa-minus-square "></span>
+                    </td>
+                    <td>
+                        <div class="qnaBlock">
+                            <div class="questionText">What is AP?</div>
+                            <div id="ans1" style="display: block" class="answerText">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate  who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
+                        </div>
+                     </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top">
+                        <span id="showAns2" style="display: block" class="text-highlighting fa fa-plus-square"></span>
+                        <span id="hideAns2" style="display:none " class="text-highlighting fa fa-minus-square"></span>
+                    </td>
+                    <td>
+                        <div class="qnaBlock">
+                            <div class="questionText">What does AP do?</div>
+                            <div id="ans2" class="answerText" style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate  who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
+                         </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top">
+                        <span id="showAns3" style="display: block" class="text-highlighting fa fa-plus-square"></span>
+                        <span id="hideAns3"  style="display: none" class="text-highlighting fa fa-minus-square"></span>
+                    </td>
+                    <td>
+                        <div class="qnaBlock">
+                            <div class="questionText">Who can become AP?</div>
+                            <div id="ans3" class="answerText"  style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top">
+                        <span id="showAns4" style="display: block" class="text-highlighting fa fa-plus-square"></span>
+                        <span id="hideAns4"  style="display: none" class="text-highlighting fa fa-minus-square"></span>
+                    </td>
+                    <td>
+                        <div class="qnaBlock">
+                            <div class="questionText">Do i need to deposit security amount to open AP account?</div>
+                            <div id="ans4" class="answerText"  style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top">
+                        <span id="showAns5" style="display: block" class="text-highlighting fa fa-plus-square"></span>
+                        <span id="hideAns5"  style="display: none" class="text-highlighting fa fa-minus-square"></span>
+                    </td>
+                    <td>
+                        <div class="qnaBlock">
+                            <div class="questionText">What is the eligibilty criteria for becoming AP?</div>
+                            <div id="ans5" class="answerText"  style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top">
+                        <span id="showAns6" style="display: block" class="text-highlighting fa fa-plus-square"></span>
+                        <span id="hideAns6"  style="display: none" class="text-highlighting fa fa-minus-square"></span>
+                    </td>
+                    <td>
+                        <div class="qnaBlock">
+                            <div class="questionText">How much time it takes to become a AP with Astha?</div>
+                            <div id="ans6" class="answerText"  style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top">
+                        <span id="showAns7" style="display: block" class="text-highlighting fa fa-plus-square"></span>
+                        <span id="hideAns7"  style="display: none" class="text-highlighting fa fa-minus-square"></span>
+                    </td>
+                    <td>
+                        <div class="qnaBlock">
+                            <div class="questionText">What are the documents required for registration?</div>
+                            <div id="ans7" class="answerText"  style="display: none">"Authorised Partner" (AP) means any person/Individual, partnership firm, LLP or body corporate who is appointed as such by a stock broker (including trading member) and who provides access to trading platform of a stock exchange as an agent of the stock broker.</div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
             </div>
         </div>
-        <div class="grid-child faqImage">
-            <img class="p-2" src="assests/FAQ.svg">
+        <div class="grid-child">
+            <img  class="p-2 faqImage" src="assests/FAQ.svg">
+            <img  class="p-2 faqImage2" src="assests/FAQ2.svg">
         </div>
     </div>
 </div>
@@ -1567,9 +1720,9 @@ textarea {
                         for my clients as per the market <br>
                         margin rates."
                     </div>
-                    <div class="mt-5"  influBlock>
-                        <p class="ml-4"><img src="assests/influencer.svg" style=" float: left;margin-right:10px;">
-                        <span class="influncerName">Nikhil Pandiya <br><span class="text-secondary infuncer">Influncer</span> </span>
+                    <div class="mt-5 influBlock">
+                        <p class=""><img src="assests/influencer.svg" style=" float: left;margin-right:10px;">
+                        <span class="influncerName">Nikhil Pandiya <br> <span class="text-secondary infuncer">Influncer</span> </span>
                         </p>
                     </div>
 
@@ -1627,5 +1780,5 @@ textarea {
         <div class="col-4 "  style="text-align: right" >Privacy policy</div>
     </div>
 </div>
-</div>
+
 </body>
