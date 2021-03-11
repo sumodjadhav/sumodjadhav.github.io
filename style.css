@@ -696,7 +696,14 @@ margin-bottom: 5px;
     }
 }
 @media only screen and (min-width: 680px) and (max-width: 920px)  and (orientation: landscape) {
-
+    .secondBlock > .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 20px;
+        background-color: rgba(156, 201, 226, 0.15);
+        padding: 10px;
+        margin: 5px;
+    }
     .firstFormBlock {
         background-color: white;font-family: Montserrat;
         margin: 5px;
@@ -770,7 +777,7 @@ margin-bottom: 5px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
-        font-size: 34px;
+        font-size: 24px;
         line-height: 100%;
         /* or 30px */
 
@@ -781,7 +788,7 @@ margin-bottom: 5px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 100%;
         /* or 16px */
 
