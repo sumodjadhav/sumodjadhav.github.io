@@ -45,6 +45,9 @@ text-align: center;
 .bmd-label-floating{
     color: #ccc;
 }
+.joiningText{
+    font-size: 22px;
+}
 .bmd-form-group {
     margin-bottom: 1rem;
     padding-top: 1.5rem;
