@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
 
-    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link href="https://rsms.me/inter/inter.css"  rel="stylesheet">
 
     <script>$(document).ready(function() {
@@ -239,9 +239,9 @@
         @media only screen and (min-width: 1200px) {
 
             body{
-                width: 1100px;
+                width: 1280px;
                 margin:auto;
-background: black;
+background: white;
             }
 
             .landingPage{
@@ -299,7 +299,8 @@ background: black;
                 margin: 10px 0px;
             }
             .firstBlock .logoBlock{
-                padding: 25px;
+                padding: 10px 25px;
+
             }
             .firstBlock .titleText{
                 text-align: left;
@@ -384,6 +385,9 @@ background: black;
             }
             .firstBlock {
                 background-image: url("assests/BG.svg");
+
+            }
+            .firstBlock .firstContent{
 
             }
             .secondBlock{
@@ -734,7 +738,7 @@ background: black;
 
                 padding: 20px;
                 font-size: 30px;
-                text-align: center;
+                text-align: left;
             }
             .sixthBlock .titleText{
                 text-align: left;
@@ -849,7 +853,7 @@ background: black;
             body{
 
                 margin:auto;
-                background: black;
+                background: white;
             }
 
             .landingPage{
@@ -1190,7 +1194,7 @@ text-align: center;
 
             .fourthblock .grid-item {
 
-                padding: 20px;
+                padding: 5px;
                 font-size: 30px;
                 text-align: center;
             }
@@ -1260,7 +1264,7 @@ text-align: center;
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 12px;
                 line-height: 28px;
                 /* identical to box height, or 156% */
 
@@ -1360,7 +1364,7 @@ text-align: center;
 
             .sixthBlock .grid-item {
 
-                padding: 20px;
+                padding: 5px;
                 font-size: 30px;
                 text-align: center;
             }
@@ -1424,8 +1428,8 @@ text-align: center;
                 line-height: 17px;
                 /* identical to box height */
 
-                margin-top:25px;
-                padding: 15px;
+
+                padding: 10px;
                 color: #8692A6;
                 /* Default / White */
 
@@ -1495,9 +1499,9 @@ text-align: center;
 
         @media only screen and (min-width: 768px) and (max-width: 1199px){
             body{
-                width: 900px;
+width: 900px;
                 margin:auto;
-                background: black;
+                background: white;
             }
 
             .landingPage{
@@ -1904,6 +1908,10 @@ width: 290px;
             .fourthblock .dpMobile{
                 display: none;
             }
+            .fourthblock .dpDesk{
+                width: 250px;
+                height: 450px;
+            }
             .fifthBlock{
 
                 margin-top: 100px;
@@ -1928,7 +1936,7 @@ width: 290px;
             }
             .fifthBlock .grid-container {
                 display: grid;
-                grid-gap: 50px;
+                grid-gap: 20px;
                 grid-template-columns:  auto auto;
                 padding: 10px;
             }
@@ -1976,6 +1984,10 @@ width: 290px;
             .fifthBlock .faqmobile{
                 display: none;
             }
+            .fifthBlock .faqdesk img{
+                width: 320px;
+                height: 400px;
+            }
 
             .sixthBlock{
                 margin-top: 100px;
@@ -1984,19 +1996,21 @@ width: 290px;
             .sixthBlock .grid-container {
                 display: grid;
                 grid-gap: 50px;
-                grid-template-columns: auto  auto;
+                grid-template-columns:   auto;
 
                 padding: 10px;
             }
-
+            .sixthBlock .quoteImg{
+                display: none;
+            }
             .sixthBlock .grid-item {
 
-                padding: 20px;
                 font-size: 30px;
                 text-align: center;
+                padding: 20px 200px 20px 200px;
             }
             .sixthBlock .titleText{
-                text-align: left;
+                text-align: center;
             }
 
             .sixthBlock .headTitle{
@@ -2013,10 +2027,11 @@ width: 290px;
                 color: #18191F;
             }
             .sixthBlock .influencerdesk{
-                margin-top: 100px ;
+                display: none;
             }
             .sixthBlock .influencermobile{
-                display: none;
+                margin-top: 25px;
+                display: block;
             }
             .sixthBlock .subheadTitle{
                 font-family: Inter;
@@ -2039,11 +2054,10 @@ width: 290px;
                 font-size: 14px;
                 line-height: 17px;
                 /* identical to box height */
-                width: 290px;
-                height: 400px;
+                width: 500px;
+                height: 450px;
 
-                padding-left:7px;
-                padding-right:7px;
+                padding: 25px;
                 color: #8692A6;
                 /* Default / White */
 
@@ -2052,6 +2066,7 @@ width: 290px;
 
                 box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
                 border-radius: 8px;
+                margin: auto;
             }
             .sixthBlock .joiningText{
                 font-family: Poppins;
@@ -2397,9 +2412,9 @@ width: 290px;
                             Become Astha&apos;s Authorised Partner and earn upto 70% brokerage and additional interest sharing
                         </div>
                         <div class="pointerTitle">
-                            <div><span class="fa fa-check text-success mr-3"></span>Minimum Qualification 10+</div>
-                            <div><span class="fa fa-check text-success mr-3"></span>Interested In Share Market & Finance</div>
-                            <div><span class="fa fa-check text-success mr-3"></span>Peoples Person Or Influencer/Youtuber</div>
+                            <div><span class="fa fa-check text-success mr-2"></span>Minimum Qualification 10+</div>
+                            <div><span class="fa fa-check text-success mr-2"></span>Interested In Share Market & Finance</div>
+                            <div><span class="fa fa-check text-success mr-2"></span>Peoples Person Or Influencer/Youtuber</div>
                         </div>
                         <div class="btnblock">
                             <button class="btn btn-primary">Become Our Partner Today</button>
