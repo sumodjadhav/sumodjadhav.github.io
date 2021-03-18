@@ -1,1355 +1,1915 @@
+    @media only screen and (min-width: 1200px) {
 
-body{
-    margin: 20px;
-    font-family: 'Montserrat';
-}
-.text-highlighting{
-    color: #5987E1;
-}
-.btn-highlighting{
-    background-color: #5987E1;
-    color: white;
-}
-.overlapContainet {
-    position: relative;
-}
-.middle {
-    transition: .5s ease;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-.bottom {
-    transition: .5s ease;
-    position: absolute;
-    top: 90%;
-    left:60%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-.custom-file-control, .form-control, .is-focused .custom-file-control, .is-focused .form-control {
-    background-image:none;
-border: none;
-}
-.is-focused .bmd-label-floating{
-    color: #ccc;
+            body{
+                width: 1100px;
+                margin:auto;
+background: black;
+            }
 
+            .landingPage{
+                background: #FFFFFF;
+            }
+
+            .overlapContainet {
+                position: relative;
+            }
+            .middle {
+                transition: .5s ease;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .firstBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns: auto  auto;
+
+                padding: 10px;
+            }
+.firstBlock .logomobile{
+    display: none;
 }
-input{
+            .firstBlock .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+
+            }
+            .firstBlock .btn-primary{
+                background: #1565D8;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */
+
+
+                text-align: center;
+
+                color: #FFFFFF;
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 10px 0px;
+            }
+            .firstBlock .logoBlock{
+                padding: 25px;
+            }
+            .firstBlock .titleText{
+                text-align: left;
+                margin-top: 50px;
+            }
+            .firstBlock .titleText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 64px;
+                line-height: 86px;
+                /* or 119% */
+
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .firstBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 28px;
+                /* or 156% */
+
+                display: flex;
+                align-items: center;
+                font-feature-settings: 'liga' off;
+
+                color: #595B5E;
+            }
+            .firstBlock .badge-danger{
+                background: #FF5F5F;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */
+
+                text-align: center;
+
+                color: #FFFFFF;
+            }
+            .firstBlock .formBlock1{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+
+                padding: 25px;
+                color: #8692A6;
+                /* Default / White */
+
+                background: #FFFFFF;
+                /* Dark Shadow */
+
+                box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                border-radius: 8px;
+                margin-bottom: 120px;
+            }
+            .firstBlock .joiningText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 45px;
+                /* identical to box height */
+
+                display: flex;
+                /*align-items: center;*/
+                text-align: left;
+                color: #000000;
+                margin-bottom: 25px;
+            }
+            .firstBlock {
+                background-image: url("assests/BG.svg");
+
+            }
+            .secondBlock{
+                margin-top: 100px;
+            }
+            .secondBlock .titleText{
+                text-align: center;        }
+            .secondBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+                /* identical to box height, or 133% */
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .secondBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+                /* or 156% */
+
+                font-feature-settings: 'liga' off;
+
+                color: #595B5E;
+            }
+
+            .secondBlock  .grid-container {
+                display: grid;
+                grid-gap: 25px;
+                grid-template-columns: auto auto auto auto;
+
+                padding: 20px;
+            }
+
+            .secondBlock  .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .secondBlock .cardText{
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                /* or 133% */
+                margin-top: 20px;
+                text-align: center;
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .secondBlock .card-body{
+                padding-top: 45px;
+            }
+            .secondBlock .card{
+
+                width: 180px;
+                height: 210px;
+
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                box-sizing: border-box;
+                border-radius: 8px;
+            }
+
+            .thirdBlock{
+                background: #1565D8;
+                margin-top: 100px;
+            }
+            .thirdBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns: auto  auto;
+
+                padding: 10px;
+            }
+
+            .thirdBlock    .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .thirdBlock .cardBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns: auto  auto;
+
+                padding: 10px;
+            }
+
+            .thirdBlock .cardBlock  .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .thirdBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+                /* or 133% */
+                margin-top: 30px;
+                font-feature-settings: 'liga' off;
+
+                color: #FFFFFF;
+            }
+            .thirdBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+                /* or 156% */
+                margin-top: 30px;
+                font-feature-settings: 'liga' off;
+
+                color: #FFFFFF;
+            }
+
+            .thirdBlock .titleText{
+                text-align: left;
+            }
+
+            .thirdBlock .blockHeadText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                /* or 139% */
+                text-align: left;
+                font-feature-settings: 'liga' off;
+                margin-top: 20px;
+                color: #FFFFFF;
+            }
+            .thirdBlock .subblockHeadText{
+                font-family: Inter;
+                margin-top: 20px;
+
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                /* or 150% */
+                text-align: left;
+
+                font-feature-settings: 'liga' off;
+
+                color: #FFFFFF;
+            }
+            .thirdBlock .blockImage{
+                text-align: left;
+            }
+            .fourthblock{
+
+                margin-top: 100px;
+            }
+            .fourthblock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns:  auto auto;
+
+                padding: 10px;
+            }
+
+
+            .fourthblock .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .fourthblock .titleText{
+                text-align: left;
+            }
+
+            .fourthblock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+                /* or 133% */
+
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .fourthblock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+                /* or 156% */
+
+                display: flex;
+                align-items: center;
+                font-feature-settings: 'liga' off;
+                margin-top: 25px;
+                color: #595B5E;
+            }
+            .fourthblock .pointerTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                /* identical to box height, or 178% */
+
+                font-feature-settings: 'liga' off;
+                margin-top: 25px;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .fourthblock .btn-primary{
+                background: #1565D8;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                color: #FFFFFF;
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 10px 0px;
+            }
+            .fourthblock .dpMobile{
+                display: none;
+            }
+            .fifthBlock{
+
+                margin-top: 100px;
+            }
+            .fifthBlock .titleText{
+                text-align: center;
+            }
+            .fifthBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+                /* or 133% */
+
+                text-align: center;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+
+            }
+            .fifthBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns:  auto auto;
+                padding: 10px;
+            }
+
+            .fifthBlock .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .fifthBlock  .questionText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 100%;
+                /* identical to box height, or 18px */
+
+                text-align: left;
+                margin-bottom: 15px;
+                margin-top: 15px;
+
+                color: #0D0C0C;
+            }
+            .fifthBlock .answerText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                /* identical to box height, or 18px */
+
+                text-align: left;
+
+                margin-left: 5px;
+                margin-bottom: 10px;
+                /* or 10px */
+
+
+                color: #9A9999;
+            }
+            .fifthBlock tr{
+                border-bottom: 1px solid #E2E2E2;
+            }
+.fifthBlock .faqmobile{
+     display: none;
+ }
+
+            .sixthBlock{
+                margin-top: 100px;
+                background: #F0F7FB;;
+            }
+            .sixthBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns: auto  auto;
+
+                padding: 10px;
+            }
+
+            .sixthBlock .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .sixthBlock .titleText{
+                text-align: left;
+            }
+
+            .sixthBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+                /* or 133% */
+
+                margin-top: 50px ;
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .sixthBlock .influencerdesk{
+                margin-top: 100px ;
+            }
+            .sixthBlock .influencermobile{
+                display: none;
+            }
+            .sixthBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 32px;
+                /* or 178% */
+                margin-top: 30px ;
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .sixthBlock .formBlock2{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+                margin-top:75px;
+                padding: 15px;
+                color: #8692A6;
+                /* Default / White */
+
+                background: #FFFFFF;
+                /* Dark Shadow */
+
+                box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                border-radius: 8px;
+            }
+            .sixthBlock .joiningText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 45px;
+                /* identical to box height */
+
+                display: flex;
+                align-items: center;
+
+                color: #000000;
+                margin-bottom: 25px;
+            }
+            .sixthBlock .btn-primary{
+                background: #1565D8;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */
+
+
+                text-align: center;
+
+                color: #FFFFFF;
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 10px 0px;
+            }
+            .seventBlock{
+
+                background: #001846;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 100%;
+                /* identical to box height, or 14px */
+
+
+                color: #FFFFFF;
+                padding: 25px;
+            }
+
+        }
+
+        @media only screen and (max-width: 767px){
+            body{
+
+                margin:auto;
+                background: black;
+            }
+
+            .landingPage{
+                background: white;
+            }
+
+            .overlapContainet {
+                position: relative;
+            }
+            .middle {
+                transition: .5s ease;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .firstBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns:   auto;
+
+                padding: 10px;
+            }
+
+            .firstBlock .grid-item {
+
+                padding: 10px;
+                font-size: 30px;
+
+            }
+            .firstBlock .btn-primary{
+                background: #1565D8;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;
+                /* identical to box height, or 156% */
+
+
+                text-align: center;
+
+                color: #FFFFFF;
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 10px 0px;
+            }
+            .firstBlock .logoBlock{
+                padding: 10px;
+            }
+            .firstBlock .titleText{
+                text-align: center;
+
+            }
+            .firstBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 35px;
+                /* or 117% */
+
+                text-align: center;
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+                margin-top: 25px;
+                color: #18191F;
+            }
+            .firstBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 20px;
+                /* or 154% */
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+                font-feature-settings: 'liga' off;
+                margin-top: 25px;
+                color: #595B5E;
+            }
+            .firstBlock .badge-danger{
+                background: #FF5F5F;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 28px;
+                /* identical to box height, or 200% */
+
+                text-align: center;
+
+                color: #FFFFFF;
+            }
+            .firstBlock .formBlock1{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+
+                padding: 10px;
+                color: #8692A6;
+                /* Default / White */
+
+                background: #FFFFFF;
+                /* Dark Shadow */
+
+                box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                border-radius: 8px;
+            }
+            .firstBlock .logodesk{
+                display: none;
+            }
+            .firstBlock .joiningText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 45px;
+                /* identical to box height */
+
+                display: flex;
+                align-items: center;
 text-align: center;
-}
-.bmd-label-floating{
-    color: #ccc;
-}
-.joiningText{
-    font-size: 22px;
-}
-.bmd-form-group {
-    margin-bottom: 1rem;
-    padding-top: 1.5rem;
-}
-.form-group {
-    margin-bottom: 5px;
-}
-
-.form-control{
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-.has-float-label {
-    display: block;
-    position: relative
-}
-.has-float-label label {
-    position: absolute;
-    background: #fff;
-
-    opacity: 1;
-    top: -.5em;
-    left: .5rem;
-    z-index: 3;
-    line-height: 1;
-    padding: 0 3px;
-    margin-left: 5px;
-}
-
-.secondBlock > .grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 10px;
-    background-color: rgba(156, 201, 226, 0.15);
-    padding: 10px;
-    margin: 5px;
-}
-
-.secondBlock > .grid-container > .grid-child {
-
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    text-align: left;
-}
-
-.secondBlock .badgeText {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 28px;
-    /* identical to box height, or 175% */
-
-    text-align: center;
-
-    color: #FFFFFF;
-}
-.secondBlock .headText{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 100%;
-    /* or 40px */
-
-
-    /* Gray 1 */
-
-    color: #333333;
-}
-.secondBlock .subheadText{
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-
-    color: #131314;
-}
-textarea {
-    resize: none;
-}
-.badge-danger{
-    background-color:  rgba(230, 122, 97, 0.86);
-}
-.firstFormBlock {
-    background-color: white;font-family: Montserrat;
-    margin: 5px;
-    padding: 10px;
-    font-size: 14px;
-}
-.formText{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 28px;
-    /* or 200% */
-
-
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-.thirdBlock > .grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 10px;
-    margin: 5px;
-
-}
-.thirdBlock > .grid-container > .grid-child {
-
-    background-color: rgba(156, 201, 226, 0.15);
-
-}
-.thirdBlock  .headText{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 100%;
-    /* or 30px */
-
-
-    /* Gray 1 */
-
-    color: #333333;
-    margin-left: 25px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-.cardBlock > .grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
-    grid-column-gap: 20px;
-    padding: 20px 20px 20px 30px;
-
-}
-
-.cardBlock > .grid-container > .grid-item{
-
-
-    text-align: center;
-    font-size: 30px;
-}
-
-.cardBlock .card{
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 100%;
-    /* or 14px */
-
-    text-align: center;
-
-    color: #000000;
-    width:  122px;
-    height: 140px
-}
-.cardBlock .card-body{
-    padding: 5px;
-}
-.firstFormBlock{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-.fourthBlock > .grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 10px;
-    background-color: rgba(156, 201, 226, 0.15);
-    padding: 10px;
-    margin: 5px;
-}
-
-.fourthBlock > .grid-container > .grid-child {
-
-    text-align: center;
-    padding: 20px 20px 20px 35px;
-    font-size: 30px;
-    text-align: left;
-}
-
-.fourthBlock .subheadText{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 100%;
-    /* or 18px */
-
-    text-align: center;
-
-    color: #000000;
-}
-.fourthBlock .card{
-    width:243px;
-    height: 270px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-.fourthBlock .card-body{
-    padding-top: 40px;
-}
-
-.fifthBlock .grid-container{
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 10px;
-    padding: 10px;
-    margin: 5px;
-}
-.fifthBlock .questionText{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 100%;
-    /* or 14px */
-
-margin-bottom: 5px;
-    color: #0D0C0C;
-}
-
-.fifthBlock .answerText{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 100%;
-    /* or 10px */
-
-
-    color: #9A9999;
-}
-.sixthBlock > .grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 10px;
-    background-color: rgba(156, 201, 226, 0.15);
-    padding: 10px;
-    margin: 5px;
-}
-
-.sixthBlock > .grid-container > .grid-child {
-
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    text-align: left;
-}
-
-.sixthBlock .headText{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 100%;
-    /* or 30px */
-
-    text-align: center;
-
-}
-.sixthBlock .subheadText{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    /* or 16px */
-
-    text-align: center;
-
-    /* Gray 1 */
-
-    color: #333333;
-}
-.sixthBlock .influncerName{
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 100%;
-    /* or 24px */
-
-
-    /* Gray 1 */
-
-    color: #333333;
-}
-.sixthBlock .infuncer{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 100%;
-    /* or 24px */
-
-
-    /* Gray 3 */
-
-    color: #828282;
-}
-.superHeadText{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 100%;
-    /* or 30px */
-
-
-    /* Gray 1 */
-
-    color: #333333;
-    margin: 30px 30px 30px;
-}
-.firstBlock {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 20px;
-}
-
-.firstBlock button{
-    font-size: 10px;
-    margin-top: 8px;
-}
-.seventBlock{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 100%;
-    /* identical to box height, or 24px */
-    height: 40px;
-    background-color: rgba(196, 196, 196, 0.21);
-    color: #000000;
-    padding: 10px;
-    margin: 1px;
-}
-
-
-.faqImage{
-    display: none;
-}
-.faqImage2{
-    display: none;
-}
-.partnerBtn{
-    display: none;
-}
-
-.influBlock{
-    line-height: 1;
-    margin-left: 30px;
-
-}
-
-.qnaBlock{
-    margin-bottom: 15px;
-    margin-left: 15px;
-}
-.secondBlock{
-    margin-bottom: 80px;
-}
-.thirdBlock{
-    margin-bottom: 80px;
-}
-.fourthBlock{
-    margin-bottom: 80px;
-}
-.fifthBlock{
-    margin-bottom: 80px;
-}
-
-@media only screen and (min-width: 480px) and (max-width: 768px)  and (orientation: portrait){
-
-
-    .secondBlock > .grid-container {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-gap: 10px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 20px;
-        margin: 5px;
-    }
-.secondBlock{
-    margin-bottom: 70px;
-}
-
-
-    .thirdBlock > .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap:40px;
-
-
-    }
-    .thirdBlock{
-        margin-bottom: 70px;
-    }
-.fourthBlock{
-    margin-bottom: 70px;
-}
-.fifthBlock{
-    margin-bottom: 70px;
-}
-    .fourthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: .2fr .2fr .2fr;
-        grid-gap:30px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px 10px 40px 20px;
-        margin: 5px;
-
-    }
-    .fourthBlock .card{
-        width:243px;
-        height: 270px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        width:143px;
-        height:250px
-    }
-    .sixthBlock .headText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 100%;
-        /* or 30px */
-
-        text-align: left;
-        margin-left: 20px;
-        margin-bottom: 40px;
-
-    }
-    .sixthBlock .subheadText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 100%;
-        /* or 16px */
-        margin-left: 20px;
-        text-align: left;
-
-        /* Gray 1 */
-
-        color: #333333;
-    }
-    .sixthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 50px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px;
-        margin: 5px;
-    }
-    .sixthBlock .influncerName{
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 100%;
-        /* or 24px */
-
-
-        /* Gray 1 */
-
-        color: #333333;
-    }
-    .sixthBlock .infuncer{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 100%;
-        /* or 24px */
-
-
-        /* Gray 3 */
-
-        color: #828282;
-    }
-    .fifthBlock .grid-container{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-        padding: 10px;
-        margin: 5px;
-    }
-    .faqImage2{
-        display: block;
-    }
-    .firstFormBlock {
-        background-color: white;font-family: Montserrat;
-        margin: 5px;
-        padding: 10px;
-        width:350px ;
-        height:410px ;
-        font-size: 24px;
-    }
-    .partnerBtn{
-        display: block;
-    }
-}
-@media only screen and (min-width: 480px) and (max-width: 680px)  and (orientation: landscape) {
-    .secondBlock > .grid-container {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-gap: 20px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px;
-        margin: 5px;
-    }
-    .influBlock{
-        margin-left:10px ;
-    }
-    .sixthBlock .influncerName{
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 100%;
-        /* or 24px */
-
-
-        /* Gray 1 */
-
-        color: #333333;
-    }
-    .sixthBlock .infuncer{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 100%;
-        /* or 24px */
-
-
-        /* Gray 3 */
-
-        color: #828282;
-    }
-    .thirdBlock > .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        margin-left: 10px;
-
-    }
-
-    .cardBlock .card{
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 100%;
-        /* or 14px */
-
-        text-align: center;
-
-        color: #000000;
-        width:  100px;
-        height: 140px
-    }
-    .fourthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: .2fr .2fr .2fr;
-        grid-gap: 0px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px 10px 40px 20px;
-        margin: 5px;
-
-    }
-    .fourthBlock .card{
-        width:243px;
-        height: 270px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        width:143px;
-        height:250px
-    }
-
-    .fourthBlock > .grid-container > .grid-child {
-
-         text-align: center;
-         padding: 20px 20px 20px 20px;
-         font-size: 30px;
-         text-align: left;
-     }
-
-    .sixthBlock .headText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 100%;
-        /* or 30px */
-
-        text-align: left;
-
-    }
-    .sixthBlock .subheadText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 100%;
-        /* or 16px */
-
-        text-align: left;
-
-        /* Gray 1 */
-
-        color: #333333;
-    }
-    .sixthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 20px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px;
-        margin: 5px;
-    }
-    .firstFormBlock {
-        background-color: white;font-family: Montserrat;
-        margin: 5px;
-        padding: 10px;
-
-    }
-}
-@media only screen and (min-width: 680px) and (max-width: 920px)  and (orientation: landscape) {
-    .secondBlock > .grid-container {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-gap: 20px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px;
-        margin: 5px;
-    }
-    .firstFormBlock {
-        background-color: white;font-family: Montserrat;
-        margin: 5px;
-        padding: 10px;
-        width:370px ;
-        height:410px ;
-    }
-    .thirdBlock > .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        margin-left: 10px;
-
-    }
-    .cardBlock .card{
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 100%;
-        /* or 14px */
-
-        text-align: center;
-
-        color: #000000;
-        width:  120px;
-        height: 150px
-    }
-    .cardBlock > .grid-container{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-        grid-column-gap: 20px;
-        padding: 20px 20px 20px 50px;
-
-    }
-    .cardBlock .card-body {
-        padding: 5px;
-    }
-    .fourthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: .2fr .2fr .2fr;
-        grid-gap: 0px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px 10px 40px 100px;
-        margin: 5px;
-
-    }
-    .fourthBlock .card{
-        width:243px;
-        height: 270px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        width:143px;
-        height:250px
-    }
-
-    .fourthBlock > .grid-container > .grid-child {
-
-        text-align: center;
-        padding: 20px 20px 20px 20px;
-        font-size: 30px;
-        text-align: left;
-    }
-
-    .sixthBlock .headText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 100%;
-        /* or 30px */
-
-        text-align: left;
-
-    }
-    .sixthBlock .subheadText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 100%;
-        /* or 16px */
-
-        text-align: left;
-
-        /* Gray 1 */
-
-        color: #333333;
-    }
-    .sixthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 120px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px;
-        margin: 5px;
-    }
-    .influBlock{
-        line-height: 1;
-        margin-left: 5px;
-
-    }
-}
-@media only screen and (min-width: 769px) and (max-width: 1199px) and (orientation: portrait){
-    .firstFormBlock {
-        background-color: white;font-family: Montserrat;
-        margin: 5px;
-        padding: 10px;
-        width:370px ;
-        height:410px ;
-    }
-
-    .secondBlock > .grid-container {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-gap: 80px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px;
-        margin: 5px;
-    }
-    .secondBlock > .grid-container > .grid-child {
-
-      margin-left:20px;
-    }
-.secondBlock{
-    margin-bottom: 80px;
-}
-    .thirdBlock > .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 100px;
-        /*margin-left: 20px;*/
-
-    }
-    .thirdBlock{
-        margin-bottom: 80px;
-    }
-    .fourthBlock{
-        margin-bottom: 80px;
-    }
-    .fifthBlock{
-        margin-bottom: 80px;
-    }
-    .fourthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: .2fr .2fr .2fr;
-        grid-gap: 80px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px 10px 40px 50px;
-        margin: 5px;
-
-    }
-    .fourthBlock .card{
-        width:243px;
-        height: 270px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        width:180px;
-        height:250px
-    }
-    .sixthBlock .headText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 100%;
-        /* or 30px */
-margin-left: 25px;
-        text-align: left;
-
-    }
-    .sixthBlock .subheadText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 100%;
-        /* or 16px */
-margin-left: 25px;
-        text-align: left;
-
-        /* Gray 1 */
-
-        color: #333333;
-    }
-    .cardBlock > .grid-container{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-        grid-column-gap: 20px;
-        padding: 20px 20px 20px 60px;
-
-    }
-    .sixthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 120px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px;
-        margin: 5px;
-    }
-    .fifthBlock .grid-container{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 50px;
-        padding: 10px;
-        margin: 5px;
-    }
-    .faqImage2{
-        display: block;
-    }
-    .partnerBtn{
-        display: block;
-    }
-}
-@media only screen and (min-width: 921px) and (max-width: 1199px) and (orientation: landscape){
-    .firstFormBlock {
-        background-color: white;font-family: Montserrat;
-        margin: 5px;
-        padding: 10px;
-        width:370px ;
-        height:410px ;
-    }
-
-    .secondBlock > .grid-container {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-gap: 50px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px;
-        margin: 5px;
-    }
-    .secondBlock .grid-container .grid-child{
-        margin-left: 30px;
-    }
-
-    .thirdBlock > .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-        margin-left: 20px;
-
-    }
-
-    .fourthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: .2fr .2fr .2fr;
-        grid-gap:80px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px 10px 40px 50px;
-        margin: 5px;
-
-    }
-    .fourthBlock .card{
-        width:243px;
-        height: 270px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        width:180px;
-        height:250px
-    }
-    .sixthBlock .headText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 100%;
-        /* or 30px */
-margin-left: 20px;
-        text-align: left;
-
-    }
-    .sixthBlock .subheadText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 100%;
-        /* or 16px */
-        margin-left:20px;
-        text-align: left;
-
-        /* Gray 1 */
-
-        color: #333333;
-    }
-    .cardBlock > .grid-container{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-        grid-column-gap: 20px;
-        padding: 20px 20px 20px 80px;
-
-    }
-    .sixthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 120px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px;
-        margin: 5px;
-    }
-    .fifthBlock .grid-container{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-        padding: 10px;
-        margin: 5px;
-    }
-    .faqImage2{
-        display: block;
-    }
-
-}
-@media only screen and (min-width: 1200px) {
-
-  body{
-      width: 1200px;
-      margin:auto;
-  }
-    .secondBlock > .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 40px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 20px;
-        margin: 5px;
-    }
-
-    .secondBlock > .grid-container > .grid-child {
-
-        text-align: center;
-        padding: 20px 0;
-        font-size: 30px;
-        text-align: left;
-    }
-
-    .secondBlock .badgeText {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 28px;
-        /* identical to box height, or 175% */
-
-        text-align: center;
-        margin-left: 5px;
-        color: #FFFFFF;
-    }
-    .secondBlock .headText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 69px;
-        line-height: 100%;
-        /* or 40px */
-
-
-        /* Gray 1 */
-
-        color: #333333;
-    }
-    .secondBlock .subheadText{
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 30px;
-
-        color: #131314;
-    }
-
-    .thirdBlock > .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 180px;
-        /*margin-left: 30px;*/
-
-    }
-    .thirdBlock > .grid-container > .grid-child {
-
-        background-color: rgba(156, 201, 226, 0.15);
-        width:502px;
-        height: 543px
-
-    }
-    .thirdBlock  .headText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 36px;
-        line-height: 100%;
-        /* or 30px */
-
-
-        /* Gray 1 */
-
-        color: #333333;
-        margin-left: 45px;
-        margin-top: 35px;
-        margin-bottom: 5px;
-    }
-    .cardBlock > .grid-container{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 40px;
-        grid-column-gap: 20px;
-        padding: 40px 40px 40px 40px;
-        margin-left: 30px;
-
-    }
-
-    .cardBlock > .grid-container > .grid-item{
-
-
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .cardBlock .card{
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 100%;
-        /* or 14px */
-
-        text-align: center;
-
-        color: #000000;
-        width:  153px;
-        height: 174px
-    }
-    .cardBlock .card-body{
-        padding: 5px;
-    }
-
-    .fourthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 10px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px 10px 40px 60px;
-        margin: 5px;
-
-    }
-
-    .fourthBlock > .grid-container > .grid-child {
-
-        text-align: center;
-        padding: 20px 20px 20px 35px;
-        font-size: 30px;
-        text-align: left;
-    }
-
-    .fourthBlock .subheadText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 100%;
-        /* or 18px */
-
-        text-align: center;
-
-        color: #000000;
-    }
-    .fourthBlock .card{
-        width:243px;
-        height: 270px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-    }
-    .fourthBlock .card-body{
-        padding-top: 40px;
-    }
-    .sixthBlock > .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 180px;
-        background-color: rgba(156, 201, 226, 0.15);
-        padding: 10px;
-        margin: 5px;
-    }
-
-    .sixthBlock > .grid-container > .grid-child {
-        margin-left: 40px;
-        text-align: center;
-        padding: 20px 0;
-        font-size: 30px;
-        text-align: left;
-    }
-
-    .sixthBlock .headText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 100%;
-        /* or 30px */
-
-        text-align: left;
-
-    }
-    .sixthBlock .subheadText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 100%;
-        /* or 16px */
-
-        text-align: left;
-
-        /* Gray 1 */
-
-        color: #333333;
-    }
-    .sixthBlock .influncerName{
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 100%;
-    }
-    .sixthBlock .infuncer{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 100%;
-        /* or 24px */
-
-
-        /* Gray 3 */
-        margin-top: 0px;
-        color: #828282;
-    }
-    .superHeadText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 100%;
-        /* or 30px */
-
-
-        /* Gray 1 */
-
-        color: #333333;
-        margin-bottom: 50px;
-
-    }
-    .fifthBlock .grid-container{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 80px;
-        padding: 10px;
-        margin: 5px;
-    }
-    .fifthBlock .questionText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 100%;
-        /* or 14px */
-
-
-        color: #0D0C0C;
-    }
-
-    .fifthBlock .answerText{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 100%;
-        /* or 10px */
-
-
-        color: #9A9999;
-    }
-    .faqImage{
-        display: block;
-
-    }
-    .faqImage > img{
-        margin-top: 10px;
-    }
-    .partnerBtn{
-        display: block;
-    }
-    .seventBlock{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 100%;
-        /* identical to box height, or 24px */
-        height: 81px;
-        background-color: rgba(196, 196, 196, 0.21);
-        color: #000000;
-        padding: 25px 10px 10px;
-    }
-
-    .secondBlock{
-        margin-bottom: 100px;
-    }
-    .thirdBlock{
-        margin-bottom: 100px;
-    }
-    .fourthBlock{
-        margin-bottom: 100px;
-    }
-    .fifthBlock{
-        margin-bottom: 50px;
-    }
-    .sixthBlock{
-        margin-bottom: 50px;
-    }
-    .influBlock{
-        line-height: 1;
-margin-left: 10px;
-    }
-    .firstFormBlock {
-        background-color: white;font-family: Montserrat;
-        margin: 5px;
-        padding: 10px;
-        width:370px ;
-        height:410px ;
-    }
-}
+                color: #000000;
+                margin-bottom: 25px;
+            }
+            .firstBlock {
+                background-image: url("assests/BG.svg");
+
+            }
+
+            .secondBlock{
+                margin-top: 100px;
+            }
+            .secondBlock .titleText{
+                text-align: center;        }
+            .secondBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 64px;
+                /* identical to box height, or 320% */
+
+                text-align: center;
+                font-feature-settings: 'liga' off;
+            }
+            .secondBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 28px;
+                /* or 215% */
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+                font-feature-settings: 'liga' off;
+            }
+
+            .secondBlock  .grid-container {
+                display: grid;
+                grid-gap: 25px;
+                grid-template-columns: auto ;
+
+                padding: 20px;
+            }
+
+            .secondBlock  .grid-item {
+
+                padding: 10px;
+                margin: auto;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .secondBlock .cardText{
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                /* or 133% */
+                margin-top: 20px;
+                text-align: center;
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .secondBlock .card-body{
+                padding-top: 45px;
+            }
+            .secondBlock .card{
+
+                width: 180px;
+                height: 210px;
+
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                box-sizing: border-box;
+                border-radius: 8px;
+            }
+
+            .thirdBlock{
+                background: #1565D8;
+                margin-top: 100px;
+            }
+            .thirdBlock .grid-container {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns:   auto;
+
+                padding: 10px;
+            }
+
+            .thirdBlock    .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .thirdBlock .cardBlock .grid-container {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns:   auto;
+
+                padding: 10px;
+            }
+
+            .thirdBlock .cardBlock  .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .thirdBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                /* or 150% */
+
+                text-align: center;
+                font-feature-settings: 'liga' off;
+
+                color: #FFFFFF;
+                margin-top: 30px;
+
+            }
+            .thirdBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 28px;
+                /* or 215% */
+
+                text-align: center;
+                font-feature-settings: 'liga' off;
+
+                color: #FFFFFF;
+                margin-top: 30px;
+
+            }
+
+            .thirdBlock .titleText{
+                text-align: left;
+            }
+
+            .thirdBlock .blockHeadText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                /* or 137% */
+
+                text-align: center;
+                font-feature-settings: 'liga' off;
+
+                color: #FFFFFF;
+                margin-top: 20px;
+
+            }
+            .thirdBlock .subblockHeadText{
+
+                margin-top: 20px;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 18px;
+                /* or 138% */
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+                font-feature-settings: 'liga' off;
+
+                color: #FFFFFF;
+            }
+            .thirdBlock .blockImage{
+                text-align: center;
+            }
+            .fourthblock{
+
+                margin-top: 100px;
+            }
+            .fourthblock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns:   auto;
+
+                padding: 10px;
+            }
+
+
+            .fourthblock .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .fourthblock .titleText{
+                text-align: left;
+            }
+
+            .fourthblock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 25px;
+                /* or 125% */
+
+                text-align: center;
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .fourthblock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 28px;
+                /* or 215% */
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+                font-feature-settings: 'liga' off;
+
+                color: #595B5E;
+                margin-top: 25px;
+
+            }
+            .fourthblock .btnblock{
+                text-align: center;
+            }
+            .fourthblock .pointerTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 32px;
+                /* identical to box height, or 246% */
+
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+text-align: center;
+                color: #18191F;
+                margin-top: 25px;
+
+
+            }
+            .fourthblock .dpDesk{
+                display: none;
+            }
+            .fourthblock .btn-primary{
+                background: #1565D8;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */
+
+
+
+                color: #FFFFFF;
+                margin-top: 20px;
+            }
+            .fifthBlock{
+
+                margin-top: 100px;
+            }
+            .fifthBlock .titleText{
+                text-align: center;
+            }
+            .fifthBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 25px;
+                /* or 125% */
+
+                text-align: center;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+
+            }
+            .fifthBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns:  auto ;
+                padding: 10px;
+            }
+
+            .fifthBlock .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .fifthBlock  .questionText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 120%;
+                /* or 16px */
+
+                display: flex;
+                align-items: center;
+
+                color: #0D0C0C;
+
+                text-align: left;
+                margin-bottom: 15px;
+                margin-top: 15px;
+
+
+            }
+            .fifthBlock .answerText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 100%;
+                /* identical to box height, or 18px */
+
+                text-align: left;
+
+                margin-left: 5px;
+                margin-bottom: 10px;
+                /* or 10px */
+
+
+                color: #9A9999;
+            }
+            .fifthBlock tr{
+                border-bottom: 1px solid #E2E2E2;
+            }
+            .fifthBlock .faqdesk{
+                display: none;
+            }
+            .sixthBlock{
+                margin-top: 100px;
+                background: #F0F7FB;;
+            }
+            .sixthBlock .grid-container {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns:   auto;
+
+                padding: 10px;
+            }
+
+            .sixthBlock .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .sixthBlock .titleText{
+                text-align: left;
+            }
+
+            .sixthBlock .headTitle{
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 25px;
+                /* or 125% */
+
+                text-align: center;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+
+                margin-top: 20px ;
+                /* Text / Gray 900 */
+
+
+            }
+            .sixthBlock .influencermobile{
+                margin-top: 20px ;
+
+                text-align: center;
+            }
+            .sixthBlock .influencerdesk{
+                display: none;
+            }
+            .sixthBlock .quoteImg{
+                display: none;
+            }
+            .sixthBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 18px;
+                /* or 138% */
+
+                text-align: center;
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+                margin-top:20px ;
+
+            }
+            .sixthBlock .formBlock2{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+                margin-top:25px;
+                padding: 15px;
+                color: #8692A6;
+                /* Default / White */
+
+                background: #FFFFFF;
+                /* Dark Shadow */
+
+                box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                border-radius: 8px;
+            }
+            .sixthBlock .joiningText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 45px;
+                /* identical to box height */
+
+                display: flex;
+                align-items: center;
+
+                color: #000000;
+                margin-bottom: 25px;
+            }
+            .sixthBlock .btn-primary{
+                background: #1565D8;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */
+
+
+                text-align: center;
+
+                color: #FFFFFF;
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 10px 0px;
+            }
+            .seventBlock{
+
+                background: #001846;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 100%;
+                /* identical to box height, or 12px */
+
+
+                color: #FFFFFF;
+                padding: 20px;
+            }
+
+
+
+
+
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1199px){
+            body{
+                width: 900px;
+                margin:auto;
+                background: black;
+            }
+
+            .landingPage{
+                background: #FFFFFF;
+            }
+
+            .overlapContainet {
+                position: relative;
+            }
+            .middle {
+                transition: .5s ease;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .firstBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns: auto  auto;
+
+                padding: 10px;
+            }
+            .firstBlock .logomobile{
+                display: none;
+            }
+            .firstBlock .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+
+            }
+            .firstBlock .btn-primary{
+                background: #1565D8;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */
+
+
+                text-align: center;
+
+                color: #FFFFFF;
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 10px 0px;
+            }
+            .firstBlock .logoBlock{
+                padding: 25px;
+            }
+            .firstBlock .titleText{
+                text-align: left;
+                margin-top: 50px;
+            }
+            .firstBlock .titleText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 65px;
+                /* or 130% */
+
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+
+            }
+            .firstBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                /* or 143% */
+
+                display: flex;
+                align-items: center;
+                font-feature-settings: 'liga' off;
+
+                color: #595B5E;
+            }
+            .firstBlock .badge-danger{
+                background: #FF5F5F;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */
+
+                text-align: center;
+
+                color: #FFFFFF;
+            }
+            .firstBlock .formBlock1{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+width: 290px;
+                height: 400px;
+
+                padding-left:7px;
+                padding-right:7px;
+                color: #8692A6;
+                /* Default / White */
+
+                background: #FFFFFF;
+                /* Dark Shadow */
+
+                box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                border-radius: 8px;
+
+            }
+            .firstBlock .joiningText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                /* identical to box height */
+
+                display: flex;
+                /*align-items: center;*/
+                text-align: left;
+                color: #000000;
+
+            }
+            .firstBlock {
+             background: rgba(242, 247, 255, 0.7);;
+
+            }
+            .secondBlock{
+                margin-top: 100px;
+            }
+            .secondBlock .titleText{
+                text-align: center;        }
+            .secondBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+                /* identical to box height, or 133% */
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .secondBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+                /* or 156% */
+
+                font-feature-settings: 'liga' off;
+
+                color: #595B5E;
+            }
+
+            .secondBlock  .grid-container {
+                display: grid;
+                grid-gap: 25px;
+                grid-template-columns: auto auto auto auto;
+
+                padding: 20px;
+            }
+
+            .secondBlock  .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .secondBlock .cardText{
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                /* or 133% */
+                margin-top: 10px;
+                text-align: center;
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .secondBlock .card-body{
+                padding-top: 20px;
+            }
+            .secondBlock .card{
+
+                width: 160px;
+                height: 190px;
+
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                box-sizing: border-box;
+                border-radius: 8px;
+            }
+
+            .thirdBlock{
+                background: #1565D8;
+                margin-top: 100px;
+            }
+            .thirdBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns: auto  auto;
+
+                padding: 10px;
+            }
+
+            .thirdBlock    .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .thirdBlock .cardBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns: auto  auto;
+
+                padding: 10px;
+            }
+
+            .thirdBlock .cardBlock  .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .thirdBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 64px;
+                /* or 133% */
+                margin-top: 30px;
+                font-feature-settings: 'liga' off;
+
+                color: #FFFFFF;
+            }
+            .thirdBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+                /* or 156% */
+                margin-top: 30px;
+                font-feature-settings: 'liga' off;
+
+                color: #FFFFFF;
+            }
+
+            .thirdBlock .titleText{
+                text-align: left;
+            }
+
+            .thirdBlock .blockHeadText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                /* or 139% */
+                text-align: left;
+                font-feature-settings: 'liga' off;
+                margin-top: 20px;
+                color: #FFFFFF;
+            }
+            .thirdBlock .subblockHeadText{
+                font-family: Inter;
+                margin-top: 20px;
+
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                /* or 150% */
+                text-align: left;
+
+                font-feature-settings: 'liga' off;
+
+                color: #FFFFFF;
+            }
+            .thirdBlock .blockImage{
+                text-align: left;
+            }
+            .fourthblock{
+
+                margin-top: 100px;
+            }
+            .fourthblock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns:  auto auto;
+
+                padding: 10px;
+            }
+
+
+            .fourthblock .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .fourthblock .titleText{
+                text-align: left;
+            }
+
+            .fourthblock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+                /* or 133% */
+
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .fourthblock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+                /* or 156% */
+
+                display: flex;
+                align-items: center;
+                font-feature-settings: 'liga' off;
+                margin-top: 25px;
+                color: #595B5E;
+            }
+            .fourthblock .pointerTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                /* identical to box height, or 178% */
+
+                font-feature-settings: 'liga' off;
+                margin-top: 25px;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .fourthblock .btn-primary{
+                background: #1565D8;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                color: #FFFFFF;
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 10px 0px;
+            }
+            .fourthblock .dpMobile{
+                display: none;
+            }
+            .fifthBlock{
+
+                margin-top: 100px;
+            }
+            .fifthBlock .titleText{
+                text-align: center;
+            }
+            .fifthBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+                /* or 133% */
+
+                text-align: center;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+
+            }
+            .fifthBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns:  auto auto;
+                padding: 10px;
+            }
+
+            .fifthBlock .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .fifthBlock  .questionText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 100%;
+                /* identical to box height, or 18px */
+
+                text-align: left;
+                margin-bottom: 15px;
+                margin-top: 15px;
+
+                color: #0D0C0C;
+            }
+            .fifthBlock .answerText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                /* identical to box height, or 18px */
+
+                text-align: left;
+
+                margin-left: 5px;
+                margin-bottom: 10px;
+                /* or 10px */
+
+
+                color: #9A9999;
+            }
+            .fifthBlock tr{
+                border-bottom: 1px solid #E2E2E2;
+            }
+            .fifthBlock .faqmobile{
+                display: none;
+            }
+
+            .sixthBlock{
+                margin-top: 100px;
+                background: #F0F7FB;;
+            }
+            .sixthBlock .grid-container {
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns: auto  auto;
+
+                padding: 10px;
+            }
+
+            .sixthBlock .grid-item {
+
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .sixthBlock .titleText{
+                text-align: left;
+            }
+
+            .sixthBlock .headTitle{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+                /* or 133% */
+
+                margin-top: 50px ;
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .sixthBlock .influencerdesk{
+                margin-top: 100px ;
+            }
+            .sixthBlock .influencermobile{
+                display: none;
+            }
+            .sixthBlock .subheadTitle{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 32px;
+                /* or 178% */
+                margin-top: 30px ;
+                font-feature-settings: 'liga' off;
+
+                /* Text / Gray 900 */
+
+                color: #18191F;
+            }
+            .sixthBlock .formBlock2{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+                width: 290px;
+                height: 400px;
+
+                padding-left:7px;
+                padding-right:7px;
+                color: #8692A6;
+                /* Default / White */
+
+                background: #FFFFFF;
+                /* Dark Shadow */
+
+                box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                border-radius: 8px;
+            }
+            .sixthBlock .joiningText{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                /* identical to box height */
+
+                display: flex;
+                /*align-items: center;*/
+                text-align: left;
+                color: #000000;
+            }
+            .sixthBlock .btn-primary{
+                background: #1565D8;
+                border-radius: 5px;
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */
+
+
+                text-align: center;
+
+                color: #FFFFFF;
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 10px 0px;
+            }
+            .seventBlock{
+
+                background: #001846;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 100%;
+                /* identical to box height, or 14px */
+
+
+                color: #FFFFFF;
+                padding: 25px;
+            }
+
+        }
+
+
+       textarea {
+           resize: none;
+       }
+       .custom-file-control, .form-control, .is-focused .custom-file-control, .is-focused .form-control {
+           background-image:none;
+           border: none;
+       }
+       .is-focused .bmd-label-floating{
+           color: #ccc;
+
+       }
+       input{
+           text-align: center;
+       }
+       .bmd-label-floating{
+           color: #ccc;
+       }
+       .bmd-form-group {
+           margin-bottom: 1rem;
+           padding-top: 1.5rem;
+       }
+       .form-group {
+           margin-bottom: 5px;
+       }
+
+       .form-control{
+           border: 1px solid #ccc;
+           border-radius: 4px;
+       }
+       .has-float-label {
+           display: block;
+           position: relative
+       }
+       .has-float-label label {
+           position: absolute;
+           background: #fff;
+
+           opacity: 1;
+           top: -.5em;
+           left: .5rem;
+           z-index: 3;
+           line-height: 1;
+           padding: 0 3px;
+           margin-left: 5px;
+       }
