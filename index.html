@@ -849,7 +849,7 @@
 
         }
 
-        @media only screen and (max-width: 767px){
+        @media only screen and (max-width: 480px){
             body{
 
                 margin:15px;
@@ -1449,7 +1449,7 @@
 
                 display: flex;
                 align-items: center;
-text-align: center;
+                text-align: center;
                 color: #000000;
                 margin-bottom: 25px;
             }
@@ -2120,14 +2120,14 @@ text-align: center;
 
         }
 
-        @media only screen and (min-width: 768px) and (max-width: 899px){
-         body{
-             padding: 15px;
-             background: white;
-             margin: auto;
-         }
+        @media only screen and (min-width: 481px) and (max-width: 899px){
+            body{
+                padding: 15px;
+                background: white;
+                margin: auto;
+            }
             .landingPage{
-                background: #FFFFFF;
+                background: white;
             }
 
             .overlapContainet {
@@ -2144,17 +2144,15 @@ text-align: center;
             }
             .firstBlock .grid-container {
                 display: grid;
-                grid-gap: 50px;
-                grid-template-columns: auto  auto;
+                grid-gap: 10px;
+                grid-template-columns: auto auto;
 
                 padding: 10px;
             }
-            .firstBlock .logomobile{
-                display: none;
-            }
+
             .firstBlock .grid-item {
 
-                padding: 20px;
+                padding: 10px;
                 font-size: 30px;
 
             }
@@ -2165,8 +2163,8 @@ text-align: center;
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 18px;
-                line-height: 28px;
+                font-size: 12px;
+                line-height: 20px;
                 /* identical to box height, or 156% */
 
 
@@ -2181,26 +2179,26 @@ text-align: center;
                 margin: 10px 0px;
             }
             .firstBlock .logoBlock{
-                padding: 25px;
+                padding: 10px;
             }
             .firstBlock .titleText{
                 text-align: left;
-                margin-top: 50px;
+
             }
-            .firstBlock .titleText{
+            .firstBlock .headTitle{
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 600;
-                font-size: 50px;
+                font-size: 44px;
                 line-height: 65px;
-                /* or 130% */
+                /* or 117% */
 
+                text-align: left;
                 font-feature-settings: 'liga' off;
 
                 /* Text / Gray 900 */
-
+                margin-top: 25px;
                 color: #18191F;
-
             }
             .firstBlock .subheadTitle{
                 font-family: Inter;
@@ -2208,12 +2206,13 @@ text-align: center;
                 font-weight: normal;
                 font-size: 14px;
                 line-height: 20px;
-                /* or 143% */
+                /* or 154% */
 
                 display: flex;
                 align-items: center;
+                text-align: left;
                 font-feature-settings: 'liga' off;
-
+                margin-top: 25px;
                 color: #595B5E;
             }
             .firstBlock .badge-danger{
@@ -2223,11 +2222,11 @@ text-align: center;
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 600;
-                font-size: 18px;
+                font-size: 14px;
                 line-height: 28px;
-                /* identical to box height, or 156% */
+                /* identical to box height, or 200% */
 
-                text-align: center;
+                text-align: left;
 
                 color: #FFFFFF;
             }
@@ -2238,11 +2237,9 @@ text-align: center;
                 font-size: 14px;
                 line-height: 17px;
                 /* identical to box height */
-                width: 290px;
-                height: 400px;
 
-                padding-left:7px;
-                padding-right:7px;
+width: 290px;
+                padding: 10px;
                 color: #8692A6;
                 /* Default / White */
 
@@ -2251,7 +2248,9 @@ text-align: center;
 
                 box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
                 border-radius: 8px;
-
+            }
+            .firstBlock .logodesk{
+                display: none;
             }
             .firstBlock .joiningText{
                 font-family: Poppins;
@@ -2262,15 +2261,16 @@ text-align: center;
                 /* identical to box height */
 
                 display: flex;
-                /*align-items: center;*/
-                text-align: left;
+                align-items: center;
+                text-align: center;
                 color: #000000;
-
+                margin-bottom: 25px;
             }
             .firstBlock {
-                background: rgba(242, 247, 255, 0.7);;
+                background-image: url("assests/BG.svg");
 
             }
+
             .secondBlock{
                 margin-top: 100px;
             }
@@ -2280,14 +2280,12 @@ text-align: center;
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 600;
-                font-size: 48px;
+                font-size: 40px;
                 line-height: 64px;
-                /* identical to box height, or 133% */
+                /* identical to box height, or 320% */
+
+                text-align: center;
                 font-feature-settings: 'liga' off;
-
-                /* Text / Gray 900 */
-
-                color: #18191F;
             }
             .secondBlock .subheadTitle{
                 font-family: Inter;
@@ -2295,24 +2293,26 @@ text-align: center;
                 font-weight: 300;
                 font-size: 18px;
                 line-height: 28px;
-                /* or 156% */
+                /* or 215% */
 
+                display: flex;
+                align-items: center;
+                text-align: center;
                 font-feature-settings: 'liga' off;
-
-                color: #595B5E;
             }
 
             .secondBlock  .grid-container {
                 display: grid;
-                grid-gap: 5px;
-                grid-template-columns: auto auto auto auto;
+                grid-gap: 25px;
+                grid-template-columns: auto auto;
 
                 padding: 20px;
             }
 
             .secondBlock  .grid-item {
 
-                padding: 20px;
+                padding: 10px;
+                margin: auto;
                 font-size: 30px;
                 text-align: center;
             }
@@ -2322,10 +2322,10 @@ text-align: center;
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 16px;
+                font-size: 18px;
                 line-height: 32px;
                 /* or 133% */
-                margin-top: 10px;
+                margin-top: 20px;
                 text-align: center;
                 font-feature-settings: 'liga' off;
 
@@ -2334,12 +2334,12 @@ text-align: center;
                 color: #18191F;
             }
             .secondBlock .card-body{
-                padding-top: 20px;
+                padding-top: 45px;
             }
             .secondBlock .card{
 
-                width: 160px;
-                height: 190px;
+                width: 180px;
+                height: 210px;
 
                 border: 1px solid rgba(0, 0, 0, 0.2);
                 box-sizing: border-box;
@@ -2352,8 +2352,8 @@ text-align: center;
             }
             .thirdBlock .grid-container {
                 display: grid;
-                grid-gap: 50px;
-                grid-template-columns: auto  auto;
+                grid-gap: 20px;
+                grid-template-columns:   auto;
 
                 padding: 10px;
             }
@@ -2367,8 +2367,8 @@ text-align: center;
 
             .thirdBlock .cardBlock .grid-container {
                 display: grid;
-                grid-gap: 50px;
-                grid-template-columns: auto  auto;
+                grid-gap: 20px;
+                grid-template-columns:  auto auto;
 
                 padding: 10px;
             }
@@ -2383,13 +2383,16 @@ text-align: center;
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 600;
-                font-size: 40px;
+                font-size: 48px;
                 line-height: 64px;
-                /* or 133% */
-                margin-top: 30px;
+                /* or 150% */
+
+                text-align: center;
                 font-feature-settings: 'liga' off;
 
                 color: #FFFFFF;
+                margin-top: 30px;
+
             }
             .thirdBlock .subheadTitle{
                 font-family: Inter;
@@ -2397,15 +2400,18 @@ text-align: center;
                 font-weight: 300;
                 font-size: 18px;
                 line-height: 28px;
-                /* or 156% */
-                margin-top: 30px;
+                /* or 215% */
+
+                text-align: center;
                 font-feature-settings: 'liga' off;
 
                 color: #FFFFFF;
+                margin-top: 30px;
+
             }
 
             .thirdBlock .titleText{
-                text-align: left;
+                text-align: center;
             }
 
             .thirdBlock .blockHeadText{
@@ -2414,23 +2420,28 @@ text-align: center;
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 25px;
-                /* or 139% */
+                /* or 137% */
+
                 text-align: left;
                 font-feature-settings: 'liga' off;
-                margin-top: 20px;
+
                 color: #FFFFFF;
-            }
-            .thirdBlock .subblockHeadText{
-                font-family: Inter;
                 margin-top: 20px;
 
+            }
+            .thirdBlock .subblockHeadText{
+
+                margin-top: 20px;
+                font-family: Inter;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 14px;
                 line-height: 21px;
-                /* or 150% */
-                text-align: left;
+                /* or 138% */
 
+                display: flex;
+                align-items: center;
+                text-align: left;
                 font-feature-settings: 'liga' off;
 
                 color: #FFFFFF;
@@ -2445,15 +2456,15 @@ text-align: center;
             .fourthblock .grid-container {
                 display: grid;
                 grid-gap: 50px;
-                grid-template-columns:  auto auto;
+                grid-template-columns:   auto;
 
                 padding: 10px;
             }
 
 
             .fourthblock .grid-item {
-
-                padding: 20px;
+margin: auto;
+                padding: 5px;
                 font-size: 30px;
                 text-align: center;
             }
@@ -2467,8 +2478,9 @@ text-align: center;
                 font-weight: 600;
                 font-size: 48px;
                 line-height: 64px;
-                /* or 133% */
+                /* or 125% */
 
+                text-align: center;
                 font-feature-settings: 'liga' off;
 
                 /* Text / Gray 900 */
@@ -2481,13 +2493,19 @@ text-align: center;
                 font-weight: 300;
                 font-size: 18px;
                 line-height: 28px;
-                /* or 156% */
+                /* or 215% */
 
                 display: flex;
                 align-items: center;
+                text-align: center;
                 font-feature-settings: 'liga' off;
-                margin-top: 25px;
+
                 color: #595B5E;
+                margin-top: 25px;
+
+            }
+            .fourthblock .btnblock{
+                text-align: center;
             }
             .fourthblock .pointerTitle{
                 font-family: Poppins;
@@ -2495,14 +2513,22 @@ text-align: center;
                 font-weight: normal;
                 font-size: 18px;
                 line-height: 32px;
-                /* identical to box height, or 178% */
+                /* identical to box height, or 246% */
 
                 font-feature-settings: 'liga' off;
-                margin-top: 25px;
 
                 /* Text / Gray 900 */
-
+                text-align: center;
                 color: #18191F;
+                margin-top: 25px;
+
+
+            }
+            .fourthblock .dpDesk{
+                display: block;
+            }
+            .fourthblock .dpMobile{
+                display: none;
             }
             .fourthblock .btn-primary{
                 background: #1565D8;
@@ -2515,24 +2541,10 @@ text-align: center;
                 line-height: 28px;
                 /* identical to box height, or 156% */
 
-                display: flex;
-                align-items: center;
-                text-align: center;
+
 
                 color: #FFFFFF;
-                /* Inside Auto Layout */
-
-                flex: none;
-                order: 0;
-                flex-grow: 0;
-                margin: 10px 0px;
-            }
-            .fourthblock .dpMobile{
-                display: none;
-            }
-            .fourthblock .dpDesk{
-                width: 250px;
-                height: 450px;
+                margin-top: 20px;
             }
             .fifthBlock{
 
@@ -2547,7 +2559,7 @@ text-align: center;
                 font-weight: 600;
                 font-size: 48px;
                 line-height: 64px;
-                /* or 133% */
+                /* or 125% */
 
                 text-align: center;
 
@@ -2558,8 +2570,8 @@ text-align: center;
             }
             .fifthBlock .grid-container {
                 display: grid;
-                grid-gap: 20px;
-                grid-template-columns:  auto auto;
+                grid-gap: 50px;
+                grid-template-columns:  auto ;
                 padding: 10px;
             }
 
@@ -2575,13 +2587,18 @@ text-align: center;
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 100%;
-                /* identical to box height, or 18px */
+                /* or 16px */
+
+                display: flex;
+                align-items: center;
+
+                color: #0D0C0C;
 
                 text-align: left;
                 margin-bottom: 15px;
                 margin-top: 15px;
 
-                color: #0D0C0C;
+
             }
             .fifthBlock .answerText{
                 font-family: Poppins;
@@ -2603,57 +2620,65 @@ text-align: center;
             .fifthBlock tr{
                 border-bottom: 1px solid #E2E2E2;
             }
+            .fifthBlock .faqdesk{
+                display: block;
+            }
             .fifthBlock .faqmobile{
                 display: none;
             }
-            .fifthBlock .faqdesk img{
-                width: 320px;
-                height: 400px;
-            }
-
             .sixthBlock{
                 margin-top: 100px;
                 background: #F0F7FB;;
             }
             .sixthBlock .grid-container {
                 display: grid;
-                grid-gap: 50px;
+                grid-gap: 20px;
                 grid-template-columns:   auto;
 
                 padding: 10px;
             }
-            .sixthBlock .quoteImg{
-                display: none;
-            }
+
             .sixthBlock .grid-item {
 
+                padding: 5px;
                 font-size: 30px;
                 text-align: left;
-                padding: 20px 200px 20px 200px;
+                margin: auto;
             }
             .sixthBlock .titleText{
-                text-align: center;
+                text-align: left;
             }
 
             .sixthBlock .headTitle{
+
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 48px;
                 line-height: 64px;
-                /* or 133% */
+                /* or 125% */
 
-                margin-top: 50px ;
+                text-align: center;
+
                 /* Text / Gray 900 */
 
                 color: #18191F;
+
+                margin-top: 20px ;
+                /* Text / Gray 900 */
+
+
+            }
+            .sixthBlock .influencermobile{
+                margin-top: 20px ;
+
+                text-align: center;
             }
             .sixthBlock .influencerdesk{
                 display: none;
             }
-            .sixthBlock .influencermobile{
-                margin-top: 25px;
-                display: block;
+            .sixthBlock .quoteImg{
+                display: none;
             }
             .sixthBlock .subheadTitle{
                 font-family: Inter;
@@ -2661,13 +2686,16 @@ text-align: center;
                 font-weight: 300;
                 font-size: 18px;
                 line-height: 32px;
-                /* or 178% */
-                margin-top: 30px ;
+                /* or 138% */
+
+                text-align: center;
                 font-feature-settings: 'liga' off;
 
                 /* Text / Gray 900 */
 
                 color: #18191F;
+                margin-top:20px ;
+
             }
             .sixthBlock .formBlock2{
                 font-family: Inter;
@@ -2676,10 +2704,9 @@ text-align: center;
                 font-size: 14px;
                 line-height: 17px;
                 /* identical to box height */
-                width: 500px;
-                height: 450px;
 
-                padding: 25px;
+
+                padding: 10px;
                 color: #8692A6;
                 /* Default / White */
 
@@ -2688,20 +2715,20 @@ text-align: center;
 
                 box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
                 border-radius: 8px;
-                margin: auto;
             }
             .sixthBlock .joiningText{
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 600;
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 30px;
+                line-height: 45px;
                 /* identical to box height */
 
                 display: flex;
-                /*align-items: center;*/
+                align-items: center;
                 text-align: center;
                 color: #000000;
+                margin-bottom: 25px;
             }
             .sixthBlock .btn-primary{
                 background: #1565D8;
@@ -2728,16 +2755,17 @@ text-align: center;
             .seventBlock{
 
                 background: #001846;
+
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 100%;
-                /* identical to box height, or 14px */
+                /* identical to box height, or 12px */
 
 
                 color: #FFFFFF;
-                padding: 25px;
+                padding: 20px;
             }
         }
         textarea {
