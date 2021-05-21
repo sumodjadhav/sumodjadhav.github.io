@@ -16,8 +16,12 @@
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link href="https://rsms.me/inter/inter.css"  rel="stylesheet">
 
-    <script>$(document).ready(function() {
-        $('body').bootstrapMaterialDesign();
+    <script>
+        $(document).ready(function() {
+            $(".slides").addClass("slidehide");
+            var myVar = setInterval(console.log('5'), 2000);
+
+            $('body').bootstrapMaterialDesign();
         $("#showAns1").click(function(){
             $("#ans1").css("display", "block");
             $("#showAns1").css("display", "none");
@@ -234,10 +238,74 @@
             }
         });
 
-    });</script>
-    <style>
-        @media only screen and (min-width: 1200px) {
 
+
+
+    });</script>
+    <script>
+
+        $(document).ready(function() {
+            $(".slides").addClass("slidehide");
+            // var myVar = setInterval(myTimer, 5000);
+        });
+        var n =1;
+        function changeSlide(number) {
+
+            const x= n + number;
+            if(x < 1){
+                n = $('.slides').length;
+            }
+            if(x > $('.slides').length) {
+                n = 1;
+            }
+            if(x>=1 && x <=$('.slides').length){
+                n += number;
+            }
+            $('.slides').removeClass('slideshow');
+            var totalSlides=$('.slides');
+            totalSlides[n-1].className += ' slideshow';
+
+        }
+            function goToSignUp() {
+                window.open(
+                    "https://partners.asthatrade.com/#/signUp", "_blank");
+            }
+        function goToLogIn() {
+            window.open(
+                "https://partners.asthatrade.com/#/LogIn", "_blank");
+        }
+        function myTimer() {
+            const x= n + 1;
+            if(x < 1){
+                n = $('.slides').length;
+            }
+            if(x > $('.slides').length) {
+                n = 1;
+            }
+            if(x>=1 && x <=$('.slides').length){
+                n += 1;
+            }
+            $('.slides').removeClass('slideshow');
+            var totalSlides=$('.slides');
+            totalSlides[n-1].className += ' slideshow';
+        }
+    </script>
+    <style>
+
+        .slidehide{
+            display: none;
+        }
+        .slideshow{
+            display: block;
+        }
+
+        .btnBtm{
+            text-align: center;
+        }
+        @media only screen and (min-width: 1200px) {
+            .btnBtm{
+                text-align: left;
+            }
             body{
                 width: 1280px;
                 margin:auto;
@@ -276,6 +344,10 @@
                 font-size: 30px;
 
             }
+            .firstBlock .badgeTitle{
+                /*font-size: 18px;*/
+                line-height: 28px;
+            }
             .firstBlock .btn-primary{
                 background: #1565D8;
                 border-radius: 5px;
@@ -304,7 +376,7 @@
             }
             .firstBlock .titleText{
                 text-align: left;
-                margin-top: 50px;
+                /*margin-top: 10px;*/
             }
             .firstBlock .titleText{
                 font-family: Poppins;
@@ -384,11 +456,47 @@
                 margin-bottom: 25px;
             }
             .firstBlock {
-                background-image: url("assests/BG.svg") ;
-                /*background-size: 100% 100%;*/
+                background-image: url("assests/BG.png") ;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
 
             }
             .firstBlock .firstContent{
+
+            }
+            .firstBlock .regisImgMob{
+                display: none;
+            }
+            .firstBlock .regisImgTab{
+                display: none;
+            }
+            .firstBlock .btn-signUp{
+                width: 241px;
+                height: 56px;
+                background: #1059D8;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 25px;
+
+            }
+
+            .firstBlock .btn-logIn{
+                width: 241px;
+                height: 56px;
+                background: none;
+                border: 1px solid #1059D8;
+                box-sizing: border-box;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                color:  #1059D8;
+                margin-top: 25px;
 
             }
             .secondBlock{
@@ -702,9 +810,9 @@
             .fifthBlock .answerText{
                 font-family: Poppins;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 400;
                 font-size: 16px;
-                line-height: 100%;
+                line-height: 130%;
                 /* identical to box height, or 18px */
 
                 text-align: left;
@@ -753,13 +861,13 @@
                 line-height: 64px;
                 /* or 133% */
 
-                margin-top: 50px ;
+                margin-top: 25px ;
                 /* Text / Gray 900 */
 
                 color: #18191F;
             }
             .sixthBlock .influencerdesk{
-                margin-top: 100px ;
+                margin-top: 35px ;
             }
             .sixthBlock .influencermobile{
                 display: none;
@@ -832,6 +940,19 @@
                 order: 0;
                 flex-grow: 0;
                 margin: 10px 0px;
+            }
+            .sixthBlock .btn-signUp{
+                width: 241px;
+                height: 56px;
+                background: #1059D8;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 25px;
+
             }
             .seventBlock{
 
@@ -998,11 +1119,47 @@
                 margin-bottom: 25px;
             }
             .firstBlock {
-                background-image: url("assests/BG.svg");
-                /*background-size: 100% 100%;*/
+                background-image: url("assests/BGSm.png");
+                background-repeat: no-repeat;
+                background-size:100% 100%;
 
             }
 
+
+            .firstBlock .regisImgTab{
+                display: none;
+            }
+            .firstBlock .regisImgWeb{
+                display: none;
+            }
+            .firstBlock .btn-signUp{
+                width: 170.36px;
+                height: 39.59px;
+                background: #1059D8;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 25px;
+
+            }
+            .firstBlock .btn-logIn{
+                width: 170.36px;
+                height: 39.59px;
+                background: none;
+                border: 1px solid #1059D8;
+                box-sizing: border-box;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color:  #1059D8;
+                margin-top: 25px;
+
+            }
             .secondBlock{
                 margin-top: 100px;
             }
@@ -1332,9 +1489,9 @@
             .fifthBlock .answerText{
                 font-family: Poppins;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 400;
                 font-size: 10px;
-                line-height: 100%;
+                line-height: 130%;
                 /* identical to box height, or 18px */
 
                 text-align: left;
@@ -1455,6 +1612,19 @@
                 color: #000000;
                 margin-bottom: 25px;
             }
+            .sixthBlock .btn-signUp{
+                width: 170.36px;
+                height: 39.59px;
+                background: #1059D8;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 25px;
+
+            }
             .sixthBlock .btn-primary{
                 background: #1565D8;
                 border-radius: 5px;
@@ -1502,7 +1672,7 @@
         @media only screen and (min-width: 900px) and (max-width: 1199px){
             body{
                 width: 900px;
-                margin:auto;
+                margin:50px auto auto auto;
                 background: white;
             }
 
@@ -1649,6 +1819,40 @@
             }
             .firstBlock {
                 background: rgba(242, 247, 255, 0.7);;
+
+            }
+            .firstBlock .regisImgMob{
+                display: none;
+            }
+            .firstBlock .regisImgWeb{
+                display: none;
+            }
+            .firstBlock .btn-signUp{
+                width: 170.36px;
+                height: 39.59px;
+                background: #1059D8;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 25px;
+
+            }
+            .firstBlock .btn-logIn{
+                width: 170.36px;
+                height: 39.59px;
+                background: none;
+                border: 1px solid #1059D8;
+                box-sizing: border-box;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color:  #1059D8;
+                margin-top: 25px;
 
             }
             .secondBlock{
@@ -1966,9 +2170,9 @@
             .fifthBlock .answerText{
                 font-family: Poppins;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 400;
                 font-size: 16px;
-                line-height: 100%;
+                line-height: 130%;
                 /* identical to box height, or 18px */
 
                 text-align: left;
@@ -2104,6 +2308,19 @@
                 order: 0;
                 flex-grow: 0;
                 margin: 10px 0px;
+            }
+            .sixthBlock .btn-signUp{
+                width: 241px;
+                height: 56px;
+                background: #1059D8;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 25px;
+
             }
             .seventBlock{
 
@@ -2273,7 +2490,40 @@
                 /*background-size: 100% 100%;*/
 
             }
+            .firstBlock .regisImgMob{
+                display: none;
+            }
 
+            .firstBlock .regisImgWeb{
+                display: none;
+            }
+            .firstBlock .btn-signUp{
+                width: 170.36px;
+                height: 39.59px;
+                background: #1059D8;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 25px;
+            }
+            .firstBlock .btn-logIn{
+                width: 170.36px;
+                height: 39.59px;
+                background: none;
+                border: 1px solid #1059D8;
+                box-sizing: border-box;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color:  #1059D8;
+                margin-top: 25px;
+
+            }
             .secondBlock{
                 margin-top: 100px;
             }
@@ -2606,9 +2856,9 @@
             .fifthBlock .answerText{
                 font-family: Poppins;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 400;
                 font-size: 16px;
-                line-height: 100%;
+                line-height: 130%;
                 /* identical to box height, or 18px */
 
                 text-align: left;
@@ -2755,6 +3005,18 @@
                 flex-grow: 0;
                 margin: 10px 0px;
             }
+            .sixthBlock .btn-signUp{
+                width: 241px;
+                height: 56px;
+                background: #1059D8;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 25px;
+            }
             .seventBlock{
 
                 background: #001846;
@@ -2771,6 +3033,7 @@
                 padding: 20px;
             }
         }
+
         textarea {
             resize: none;
         }
@@ -2842,42 +3105,57 @@
                             Get upto 75%<br> brokerage share
                         </div>
                         <div class="subheadTitle">
-                            <span>Plus instant bonus of<span  style="color:#1565D8;text-wrap: none">&nbsp;Rs 200&nbsp;</span>for every activated client</span>                        </div>
+                            <span>Plus instant bonus of<span  style="color:#1565D8;text-wrap: none">&nbsp;Rs 200&nbsp;</span>for every activated client</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6" >
+                                <button class="btn btn-signUp" onclick="goToSignUp()">Sign Up</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <button class="btn btn-logIn" onclick="goToLogIn()">Log In</button>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
                 <div class="grid-item">
-                    <div class=" formBlock1">
-                        <div>
-                            <h3 class="joiningText">Join Program Request</h3>
-                        </div>
+<!--                    <div class=" formBlock1">-->
+<!--                        <div>-->
+<!--                            <h3 class="joiningText">Join Program Request</h3>-->
+<!--                        </div>-->
 
-                        <form>
-                            <div class="form-group has-float-label">
-                                <label for="name1" class="bmd-label-floating">Name<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="name">
-                                <span class="bmd-help"  id="nameCheck"><span style="color: red">*Enter your Name</span></span>
-                            </div>
-                            <div class="form-group has-float-label">
-                                <label for="phone1" class="bmd-label-floating">Phone<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="phone">
-                                <span class="bmd-help"  id="phoneCheck"><span style="color: red">*Enter valid Number</span></span>
-                            </div>
-                            <div class="form-group has-float-label">
-                                <label for="city1" class="bmd-label-floating">City<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="city">
-                                <span class="bmd-help" id="cityCheck" ><span style="color: red">*Enter your City</span></span>
-                            </div>
+<!--                        <form>-->
+<!--                            <div class="form-group has-float-label">-->
+<!--                                <label for="name1" class="bmd-label-floating">Name<span class="text-danger">*</span></label>-->
+<!--                                <input type="text" class="form-control" id="name">-->
+<!--                                <span class="bmd-help"  id="nameCheck"><span style="color: red">*Enter your Name</span></span>-->
+<!--                            </div>-->
+<!--                            <div class="form-group has-float-label">-->
+<!--                                <label for="phone1" class="bmd-label-floating">Phone<span class="text-danger">*</span></label>-->
+<!--                                <input type="text" class="form-control" id="phone">-->
+<!--                                <span class="bmd-help"  id="phoneCheck"><span style="color: red">*Enter valid Number</span></span>-->
+<!--                            </div>-->
+<!--                            <div class="form-group has-float-label">-->
+<!--                                <label for="city1" class="bmd-label-floating">City<span class="text-danger">*</span></label>-->
+<!--                                <input type="text" class="form-control" id="city">-->
+<!--                                <span class="bmd-help" id="cityCheck" ><span style="color: red">*Enter your City</span></span>-->
+<!--                            </div>-->
 
-                            <div class="form-group has-float-label">
-                                <label for="enquiry1" class="bmd-label-floating">enquiry</label>
-                                <textarea class="form-control" id="enquiry" rows="3"></textarea>
-                            </div>
+<!--                            <div class="form-group has-float-label">-->
+<!--                                <label for="enquiry1" class="bmd-label-floating">enquiry</label>-->
+<!--                                <textarea class="form-control" id="enquiry" rows="3"></textarea>-->
+<!--                            </div>-->
 
-                            <div class="form-group">
-                                <button type="submit"   id="submitbtn" class="btn btn-primary form-control">Submit Request</button>
-                            </div>
-                        </form>
+<!--                            <div class="form-group">-->
+<!--                                <button type="submit"   id="submitbtn" class="btn btn-primary form-control">Submit Request</button>-->
+<!--                            </div>-->
+<!--                        </form>-->
+<!--                    </div>-->
+
+                    <img class="regisImgWeb" src="assests/registerImgWeb.svg">
+                    <img class="regisImgTab" src="assests/registerImgTab.svg">
+                    <div style="text-align: center">
+                        <img class="regisImgMob" src="assests/registerImgMob.svg">
                     </div>
 
                 </div>
@@ -2886,7 +3164,6 @@
         </div>
 
     </div>
-
     <div class="secondBlock">
         <div class="titleText">
             <div class="headTitle">What&apos;s in it for you?</div>
@@ -3228,57 +3505,129 @@
                         highest margin
                         with Astha
                     </div>
+                    <div class="btnBtm">
+                        <button class="btn btn-signUp" onclick="goToSignUp()">Sign Up</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="grid-item">
+<!--                <div class=" formBlock2">-->
+<!--                    <div>-->
+<!--                        <h3 class="joiningText">Join Program Request</h3>-->
+<!--                    </div>-->
+
+<!--                    <form>-->
+<!--                        <div class="form-group has-float-label">-->
+<!--                            <label for="name1" class="bmd-label-floating">Name<span class="text-danger">*</span></label>-->
+<!--                            <input type="text" class="form-control" id="name1">-->
+<!--                            <span class="bmd-help"  id="nameCheck1"><span style="color: red">*Enter your Name</span></span>-->
+<!--                        </div>-->
+<!--                        <div class="form-group has-float-label">-->
+<!--                            <label for="phone1" class="bmd-label-floating">Phone<span class="text-danger">*</span></label>-->
+<!--                            <input type="text" class="form-control" id="phone1">-->
+<!--                            <span class="bmd-help"  id="phoneCheck1"><span style="color: red">*Enter valid Number</span></span>-->
+<!--                        </div>-->
+<!--                        <div class="form-group has-float-label">-->
+<!--                            <label for="city1" class="bmd-label-floating">City<span class="text-danger">*</span></label>-->
+<!--                            <input type="text" class="form-control" id="city1">-->
+<!--                            <span class="bmd-help" id="cityCheck1" ><span style="color: red">*Enter your City</span></span>-->
+<!--                        </div>-->
+
+<!--                        <div class="form-group has-float-label">-->
+<!--                            <label for="enquiry1" class="bmd-label-floating">enquiry</label>-->
+<!--                            <textarea class="form-control" id="enquiry1" rows="3"></textarea>-->
+<!--                        </div>-->
+
+<!--                        <div class="form-group">-->
+<!--                            <button type="submit"   id="submitbtn1" class="btn btn-primary form-control">Submit Request</button>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div></div>-->
+                <div class="slides slideshow">
                     <div class="influencerdesk">
-                        <img src="assests/influencer.svg" style="float: left;margin-right: 100px">
+                        <div style="float: left;margin-right: 100px">
+                            <div style="float: left;">
+                                <img src="assests/sumo.png">
+
+                            </div>
+                            <div style="float: right;margin-left: 16px;margin-top: 3px">
+                                <div style="font-style: normal;font-weight: bold;font-size: 18px;
+                                    line-height: 28px;font-feature-settings: 'liga' off;color: #18191F;">Shruti Shinde0</div>
+                                <div style="font-style: normal;font-weight: normal;font-size: 14px;line-height: 24px;
+                                    font-feature-settings: 'liga' off;color: #474A57;">Astha Trade AP</div>
+                            </div>
+                        </div>
+                        <img class="quoteImg" src="assests/quotes.svg" alt="quotes" >
+                    </div>
+                    <div class="influencermobile">
+                        <img src="assests/influencer.svg"  alt="influ">
+
+
+                    </div>
+                    <div class="subheadTitle" style="clear: both">
+                        I have been using Asthatrade from last five to six years and am getting
+                        the best brokerage rates for my personal growth and better margins for my
+                        clients. I can choose who to charge what brokerage as per my service.
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="influencerdesk">
+                        <div style="float: left;margin-right: 100px">
+                            <div style="float: left;">
+                                <img src="assests/sumo.png">
+
+                            </div>
+                            <div style="float: right;margin-left: 16px;margin-top: 3px">
+                                <div style="font-style: normal;font-weight: bold;font-size: 18px;
+                                    line-height: 28px;font-feature-settings: 'liga' off;color: #18191F;">Shruti Shinde1</div>
+                                <div style="font-style: normal;font-weight: normal;font-size: 14px;line-height: 24px;
+                                    font-feature-settings: 'liga' off;color: #474A57;">Astha Trade AP</div>
+                            </div>
+                        </div>
                         <img class="quoteImg" src="assests/quotes.svg" alt="quotes" >
                     </div>
                     <div class="influencermobile">
                         <img src="assests/influencer.svg"  alt="influ">
 
                     </div>
-                    <div class="subheadTitle">
+                    <div class="subheadTitle" style="clear: both">
                         I have been using Asthatrade from last five to six years and am getting
                         the best brokerage rates for my personal growth and better margins for my
                         clients. I can choose who to charge what brokerage as per my service.
                     </div>
-                    <div class="subheadTitle">
-                        <  >
+                </div>
+                <div class="slides">
+                    <div class="influencerdesk">
+                        <div style="float: left;margin-right: 100px">
+                            <div style="float: left;">
+                                <img src="assests/sumo.png">
+
+                            </div>
+                            <div style="float: right;margin-left: 16px;margin-top: 3px">
+                                <div style="font-style: normal;font-weight: bold;font-size: 18px;
+                                    line-height: 28px;font-feature-settings: 'liga' off;color: #18191F;">Shruti Shinde2</div>
+                                <div style="font-style: normal;font-weight: normal;font-size: 14px;line-height: 24px;
+                                    font-feature-settings: 'liga' off;color: #474A57;">Astha Trade AP</div>
+                            </div>
+                        </div>
+                        <img class="quoteImg" src="assests/quotes.svg" alt="quotes" >
+                    </div>
+                    <div class="influencermobile">
+                        <img src="assests/influencer.svg"  alt="influ">
+
+                    </div>
+                    <div class="subheadTitle" style="clear: both">
+                        I have been using Asthatrade from last five to six years and am getting
+                        the best brokerage rates for my personal growth and better margins for my
+                        clients. I can choose who to charge what brokerage as per my service.
                     </div>
                 </div>
-            </div>
-            <div class="grid-item">
-                <div class=" formBlock2">
-                    <div>
-                        <h3 class="joiningText">Join Program Request</h3>
-                    </div>
 
-                    <form>
-                        <div class="form-group has-float-label">
-                            <label for="name1" class="bmd-label-floating">Name<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="name1">
-                            <span class="bmd-help"  id="nameCheck1"><span style="color: red">*Enter your Name</span></span>
-                        </div>
-                        <div class="form-group has-float-label">
-                            <label for="phone1" class="bmd-label-floating">Phone<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="phone1">
-                            <span class="bmd-help"  id="phoneCheck1"><span style="color: red">*Enter valid Number</span></span>
-                        </div>
-                        <div class="form-group has-float-label">
-                            <label for="city1" class="bmd-label-floating">City<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="city1">
-                            <span class="bmd-help" id="cityCheck1" ><span style="color: red">*Enter your City</span></span>
-                        </div>
-
-                        <div class="form-group has-float-label">
-                            <label for="enquiry1" class="bmd-label-floating">enquiry</label>
-                            <textarea class="form-control" id="enquiry1" rows="3"></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <button type="submit"   id="submitbtn1" class="btn btn-primary form-control">Submit Request</button>
-                        </div>
-                    </form>
-                </div></div>
+                <div class="subheadTitle">
+                    <span onclick="changeSlide(-1)"> < </span> <span onclick="changeSlide(1)"> > </span>
+                </div>
         </div>
     </div>
     <div class="seventBlock">
